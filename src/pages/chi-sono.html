@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/cdc3086e9e.js" crossorigin="anonymous"></script>
+    
+    <!--OG TAGS-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chi è Elia Giolli di Giollidesign?">
+    <meta property="og:description" content="In questa pagina troverete informazioni su di me, sulla mia carriera scolastica e universitaria.">
+    <meta property="og:url" content="http://127.0.0.1:5500/chi-sono.html">
+
+    <title>Chi sono - Elia Giolli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="bg-gray-900 min-h-screen font-poppins">
+
+    <!--NAVBAR-->
+    <nav class="sticky top-0 bg-gray-800 border-b-2 border-cyan-300 py-5 mb-12">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo/Toggle button -->
+          <button class="lg:hidden" onclick="toggleMenu()">
+            <img src="../assets/img/logo.jpg" alt="Logo Giolli Design" class="w-12 h-11 object-cover rounded">
+          </button>
+          
+          <!-- Navigation links - Desktop -->
+          <div class="hidden lg:flex flex-grow justify-center items-center gap-8">
+            <a href="../index.html" class="text-cyan-300 hover:text-white transition-colors">Home</a>
+            <a href="./chi-sono.html" class="text-cyan-300 hover:text-white transition-colors">Chi sono</a>
+            <a href="./progetti.html" class="text-cyan-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="./contatti.html" class="text-cyan-300 hover:text-white transition-colors">Contatti</a>
+          </div>
+          
+          <!-- Search form - Desktop -->
+          <form class="hidden lg:flex gap-2">
+            <input type="search" placeholder="Cerca" class="px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400">
+            <button type="submit" class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors">
+              Cerca
+            </button>
+          </form>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden mt-4">
+          <div class="flex flex-col gap-4">
+            <a href="../index.html" class="text-cyan-300 hover:text-white transition-colors">Home</a>
+            <a href="./chi-sono.html" class="text-cyan-300 hover:text-white transition-colors">Chi sono</a>
+            <a href="./progetti.html" class="text-cyan-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="./contatti.html" class="text-cyan-300 hover:text-white transition-colors">Contatti</a>
+            
+            <!-- Search form - Mobile -->
+            <form class="flex gap-2">
+              <input type="search" placeholder="Cerca" class="flex-1 px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400">
+              <button type="submit" class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors">
+                Cerca
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--CARD PRESENTAZIONE-->
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+          <div class="w-full lg:w-1/3 max-w-sm mx-auto">
+            <div class="aspect-square">
+              <img src="../assets/img/foto-elia.jpg" 
+                   alt="Foto Elia" 
+                   class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+          </div>
+          <div class="w-full lg:w-2/3 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-cyan-300">Qualcosa su di me</h2>
+            <div class="space-y-4 text-white text-lg md:text-xl">
+              <p>Mi chiamo Elia, ho 30 anni, abito a Fabbrica di Peccioli(PI), e sono uno studente di front-end web development e di UX design.</p>
+              <p>La mia più grande passione è lo studio delle lingue straniere, passione che continuo a portare avanti nel mio tempo libero.<br>
+                 Posso parlare a vari livelli di fluenza l'inglese, il russo, lo spagnolo, il tedesco, il cinese, il giapponese e il polacco.</p>
+              <p>Un'altra mia grande passione sono i viaggi, e, appena mi è possibile mi piace scoprire posti nuovi in Italia e all'estero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CARD ISTRUZIONE-->
+    <div class="container mx-auto px-4 py-12 border-t border-cyan-300/20">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row gap-8 items-start">
+          <div class="w-full lg:w-1/3 max-w-sm mx-auto">
+            <div class="aspect-square">
+              <img src="../assets/img/foto-laurea.jpg" 
+                   alt="Foto laurea" 
+                   class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+          </div>
+          <div class="w-full lg:w-2/3 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-cyan-300">Carriera scolastica e universitaria</h2>
+            <div class="space-y-4 text-white text-lg md:text-xl">
+              <p>Mi sono diplomato all'Istituto Tecnico Industriale Statale ITIS G.Marconi di Pontedera(PI) nel 2014.</p>
+              <p>Tra le varie materie che ho studiato in quegli anni c'era anche informatica, dalla quale è nata la mia passione per lo sviluppo web. Ho avuto modo di cimentarmi con vari linguaggi di programmazione come C, C++, PHP e MySQL.</p>
+              <p>Mi sono laureato alla facoltà di lingue e letterature straniere dell'Università di Pisa nel 2019.<br>
+                 Durante i tre anni di studio non solo ho studiato il russo, lo spagnolo e il tedesco, ma anche vari corsi di linguistica, letteratura, arte e storia.</p>
+              <p>Infine, da settembre 2024 sono iscritto alla laurea in linguistica e traduzione presso l'Università di Pisa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white mt-20 border-t-2 border-cyan-300">
+      <div class="container mx-auto px-4 py-8">
+        <div class="text-center space-y-4">
+          <div class="flex items-center justify-center gap-2">
+            <img src="../assets/img/logo.jpg" alt="Logo Giolli Design" class="w-12 h-11 object-cover rounded">
+            <h6 class="text-xl font-bold">GIOLLI DESIGN</h6>
+          </div>
+          <h5 class="text-cyan-300">Connettiti con me!</h5>
+          <p class="text-gray-300">Mail: info@giollidesign.com</p>
+          <div class="flex justify-center gap-8">
+            <a href="https://www.instagram.com/eliagiolli/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/eliagiolli22/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eliagiolli/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://github.com/EliaGiolli" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>

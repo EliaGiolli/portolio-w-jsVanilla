@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/cdc3086e9e.js" crossorigin="anonymous"></script>
+    
+    <!--OG TAGS-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contatta Elia Giolli di Giollidesign!">
+    <meta property="og:description" content="In questa pagina troverete tutti i miei contatti social e potrete inviarmi un messaggio tramite form.">
+    <meta property="og:url" content="http://127.0.0.1:5500/contatti.html">
+    
+    <title>Contatti - Elia Giolli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="bg-gray-900 min-h-screen font-poppins">
+
+    <!-- NAVBAR uguale alle altre pagine -->
+    <nav class="sticky top-0 bg-gray-800 border-b-2 border-cyan-300 py-5 mb-12">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo/Toggle button -->
+          <button class="lg:hidden" onclick="toggleMenu()">
+            <img src="../assets/img/logo.jpg" alt="Logo Giolli Design" class="w-12 h-11 object-cover rounded">
+          </button>
+          
+          <!-- Navigation links - Desktop -->
+          <div class="hidden lg:flex flex-grow justify-center items-center gap-8">
+            <a href="../index.html" class="text-cyan-300 hover:text-white transition-colors">Home</a>
+            <a href="./chi-sono.html" class="text-cyan-300 hover:text-white transition-colors">Chi sono</a>
+            <a href="./progetti.html" class="text-cyan-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="./contatti.html" class="text-cyan-300 hover:text-white transition-colors">Contatti</a>
+          </div>
+          
+          <!-- Search form - Desktop -->
+          <form class="hidden lg:flex gap-2">
+            <input type="search" placeholder="Cerca" class="px-4 py-2 rounded bg-gray-700 text-white">
+            <button type="submit" class="bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-colors">
+              Cerca
+            </button>
+          </form>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden mt-4">
+          <div class="flex flex-col gap-4">
+            <a href="../index.html" class="text-cyan-300 hover:text-white transition-colors">Home</a>
+            <a href="./chi-sono.html" class="text-cyan-300 hover:text-white transition-colors">Chi sono</a>
+            <a href="./progetti.html" class="text-cyan-300 hover:text-white transition-colors">Portfolio</a>
+            <a href="./contatti.html" class="text-cyan-300 hover:text-white transition-colors">Contatti</a>
+            
+            <!-- Search form - Mobile -->
+            <form class="flex gap-2">
+              <input type="search" placeholder="Cerca" class="flex-1 px-4 py-2 rounded bg-gray-700 text-white">
+              <button type="submit" class="bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-colors">
+                Cerca
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SEZIONE CONTATTI -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <!-- Titolo -->
+        <h1 class="text-4xl font-bold text-center text-white mb-12">Contattami</h1>
+
+        <!-- Grid contatti diretti -->
+        <div class="grid md:grid-cols-3 gap-8 mb-12">
+          <!-- Email -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center space-y-4 hover:scale-105 transition-transform">
+            <i class="fa-solid fa-envelope text-4xl text-cyan-300"></i>
+            <h3 class="text-xl font-bold text-white">Email</h3>
+            <p class="text-gray-300">info@giollidesign.com</p>
+          </div>
+          
+          <!-- Telefono -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center space-y-4 hover:scale-105 transition-transform">
+            <i class="fa-solid fa-phone text-4xl text-cyan-300"></i>
+            <h3 class="text-xl font-bold text-white">Telefono</h3>
+            <p class="text-gray-300">+39 333 XXX XXXX</p>
+          </div>
+          
+          <!-- Indirizzo -->
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center space-y-4 hover:scale-105 transition-transform">
+            <i class="fa-solid fa-location-dot text-4xl text-cyan-300"></i>
+            <h3 class="text-xl font-bold text-white">Indirizzo</h3>
+            <p class="text-gray-300">Fabbrica di Peccioli, Pisa</p>
+          </div>
+        </div>
+
+        <!-- Form di contatto -->
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold text-cyan-300 mb-6 text-center">Inviami un messaggio</h2>
+          
+          <form class="space-y-6">
+            <!-- Nome e Cognome -->
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label for="nome" class="block text-white mb-2">Nome</label>
+                <input type="text" id="nome" name="nome" required
+                       class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400
+                              focus:outline-none focus:ring-2 focus:ring-cyan-300">
+              </div>
+              <div>
+                <label for="cognome" class="block text-white mb-2">Cognome</label>
+                <input type="text" id="cognome" name="cognome" required
+                       class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400
+                              focus:outline-none focus:ring-2 focus:ring-cyan-300">
+              </div>
+            </div>
+            
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-white mb-2">Email</label>
+              <input type="email" id="email" name="email" required
+                     class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400
+                            focus:outline-none focus:ring-2 focus:ring-cyan-300">
+            </div>
+            
+            <!-- Oggetto -->
+            <div>
+              <label for="oggetto" class="block text-white mb-2">Oggetto</label>
+              <input type="text" id="oggetto" name="oggetto" required
+                     class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400
+                            focus:outline-none focus:ring-2 focus:ring-cyan-300">
+            </div>
+            
+            <!-- Messaggio -->
+            <div>
+              <label for="messaggio" class="block text-white mb-2">Messaggio</label>
+              <textarea id="messaggio" name="messaggio" rows="5" required
+                        class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400
+                               focus:outline-none focus:ring-2 focus:ring-cyan-300 resize-none"></textarea>
+            </div>
+            
+            <!-- Privacy -->
+            <div class="flex items-start gap-2">
+              <input type="checkbox" id="privacy" name="privacy" required
+                     class="mt-1 rounded bg-gray-700 text-cyan-600 focus:ring-cyan-300">
+              <label for="privacy" class="text-gray-300 text-sm">
+                Accetto la <a href="#" class="text-cyan-300 hover:text-white">Privacy Policy</a> e il trattamento dei dati personali
+              </label>
+            </div>
+            
+            <!-- Bottone invio -->
+            <button type="submit" 
+                    class="w-full px-6 py-3 bg-cyan-600 text-white rounded-lg 
+                           hover:bg-cyan-700 hover:scale-105
+                           transition-all duration-300">
+              Invia messaggio
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-white mt-20 border-t-2 border-cyan-300">
+      <div class="container mx-auto px-4 py-8">
+        <div class="text-center space-y-4">
+          <div class="flex items-center justify-center gap-2">
+            <img src="../assets/img/logo.jpg" alt="Logo Giolli Design" class="w-12 h-11 object-cover rounded">
+            <h6 class="text-xl font-bold">GIOLLI DESIGN</h6>
+          </div>
+          <h5 class="text-cyan-300">Connettiti con me!</h5>
+          <p class="text-gray-300">Mail: info@giollidesign.com</p>
+          <div class="flex justify-center gap-8">
+            <a href="https://www.instagram.com/eliagiolli/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/eliagiolli22/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-facebook-messenger text-2xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eliagiolli/" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-linkedin text-2xl"></i>
+            </a>
+            <a href="https://github.com/EliaGiolli" class="text-cyan-300 hover:text-white transition-colors">
+              <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+  </body>
+</html>
