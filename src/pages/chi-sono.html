@@ -12,9 +12,10 @@
     <meta property="og:url" content="http://127.0.0.1:5500/chi-sono.html">
 
     <title>Chi sono - Elia Giolli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
   </head>
-  <body class="bg-gray-900 min-h-screen">
+  <body class="bg-gray-900 min-h-screen font-poppins">
 
     <!--NAVBAR-->
     <nav class="sticky top-0 bg-gray-800 border-b-2 border-cyan-300 py-5 mb-12">
@@ -35,8 +36,8 @@
           
           <!-- Search form - Desktop -->
           <form class="hidden lg:flex gap-2">
-            <input type="search" placeholder="Cerca" class="px-4 py-2 rounded bg-gray-700 text-white">
-            <button type="submit" class="bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-colors">
+            <input type="search" placeholder="Cerca" class="px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400">
+            <button type="submit" class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors">
               Cerca
             </button>
           </form>
@@ -52,8 +53,8 @@
             
             <!-- Search form - Mobile -->
             <form class="flex gap-2">
-              <input type="search" placeholder="Cerca" class="flex-1 px-4 py-2 rounded bg-gray-700 text-white">
-              <button type="submit" class="bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition-colors">
+              <input type="search" placeholder="Cerca" class="flex-1 px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400">
+              <button type="submit" class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors">
                 Cerca
               </button>
             </form>
@@ -61,52 +62,189 @@
         </div>
       </div>
     </nav>
+  
 
-    <!--CARD PRESENTAZIONE-->
-    <div class="container mx-auto px-4 py-12">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col lg:flex-row gap-8 items-start">
-          <div class="w-full lg:w-1/3 max-w-sm mx-auto">
-            <img src="../assets/img/foto-elia.jpg" 
-                 alt="Foto Elia" 
-                 class="rounded-lg shadow-lg w-full h-64 object-cover">
+    <main class="container mx-auto px-4 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto h-full">
+
+         <!--Card 1: Presentazione-->
+         <div class="bg-gray-800 rounded-lg p-6 h-full flex flex-col">
+          <div class="flex flex-col md:flex-row gap-6 flex-grow">
+            <div class="md:w-1/3">
+              <img src="../assets/img/foto-elia.jpg" 
+                   alt="Foto Elia" 
+                   class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-2/3">
+              <h2 class="text-3xl font-bold text-cyan-300">Qualcosa su di me</h2>
+              <p class="text-white mt-4">Mi chiamo Elia, ho 30 anni, abito a Fabbrica di Peccioli(PI), e sono uno studente di front-end web development e traduzione.</p>
+            </div> 
           </div>
-          <div class="w-full lg:w-2/3 space-y-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-cyan-300">Qualcosa su di me</h2>
-            <div class="space-y-4 text-white text-lg md:text-xl">
-              <p>Mi chiamo Elia, ho 29 anni, abito a Fabbrica di Peccioli(PI), e sono uno studente di front-end web development e di UX design.</p>
-              <p>La mia più grande passione è lo studio delle lingue straniere, passione che continuo a portare avanti nel mio tempo libero.<br>
-                 Posso parlare a vari livelli di fluenza l'inglese, il russo, lo spagnolo, il tedesco, il cinese, il giapponese e il polacco.</p>
-              <p>Un'altra mia grande passione sono i viaggi, e, appena mi è possibile mi piace scoprire posti nuovi in Italia e all'estero.</p>
+          <button class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors mt-auto">
+            Scopri di più
+          </button>
+        </div>
+
+        <!--Card 2: Tech Background-->
+        <div class="bg-gray-800 rounded-lg p-6 h-full flex flex-col space-y-8">
+          <!-- Sezione Titolo -->
+          <div class="mx-auto">
+            <h2 class="text-3xl font-bold text-cyan-300 ">Tech Background</h2>
+          </div>
+          <div>
+            <div class="grid grid-cols-2 gap-6 text-white">
+              <div class="flex items-center gap-3 group">
+                <i class="fa-brands fa-html5 text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                <span class="group-hover:text-cyan-300 transition-colors">HTML5</span>
+              </div>
+              <div class="flex items-center gap-3 group">
+                <i class="fa-brands fa-php text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                <span class="group-hover:text-cyan-300 transition-colors">PHP</span>
+              </div>
+              <div class="flex items-center gap-3 group">
+                <i class="fa-solid fa-database text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                <span class="group-hover:text-cyan-300 transition-colors">MySQL</span>
+              </div>
+              <div class="flex items-center gap-3 group">
+                <div class="flex items-center text-xl font-bold text-cyan-300 group-hover:text-white transition-colors">
+                  <span>C</span>
+                  <span class="text-sm align-top">++</span>
+                </div>
+                <span class="group-hover:text-cyan-300 transition-colors">C++</span>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!--CARD ISTRUZIONE-->
-    <div class="container mx-auto px-4 py-12 border-t border-cyan-300/20">
-      <div class="max-w-6xl mx-auto">
-        <div class="flex flex-col lg:flex-row gap-8 items-start">
-          <div class="w-full lg:w-1/3 max-w-sm mx-auto">
-            <img src="../assets/img/foto-laurea.jpg" 
-                 alt="Foto laurea" 
-                 class="rounded-lg shadow-lg w-full h-64 object-cover">
+          <!-- Bottone -->
+          <button class="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded transition-colors w-full mt-auto">
+            Scopri di più
+          </button>
+        </div>
+
+        <!--Card 3: lingue e carriera universitaria-->
+        <div class="bg-gray-800 rounded-lg p-6 h-full flex flex-col space-y-8">
+          <div class="mx-auto">
+            <h2 class="text-3xl font-bold text-cyan-300">Lingue e Carriera</h2>
           </div>
-          <div class="w-full lg:w-2/3 space-y-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-cyan-300">Carriera scolastica e universitaria</h2>
-            <div class="space-y-4 text-white text-lg md:text-xl">
-              <p>Mi sono diplomato all'Istituto Tecnico Industriale Statale ITIS G.Marconi di Pontedera(PI) nel 2014.</p>
-              <p>Tra le varie materie che ho studiato in quegli anni c'era anche informatica, dalla quale è nata la mia passione per lo sviluppo web. Ho avuto modo di cimentarmi con vari linguaggi di programmazione come C, C++, PHP e MySQL.</p>
-              <p>Mi sono laureato alla facoltà di lingue e letterature straniere dell'Università di Pisa nel 2019.<br>
-                 Durante i tre anni di studio non solo ho studiato il russo, lo spagnolo e il tedesco, ma anche vari corsi di linguistica, letteratura, arte e storia.</p>
-              <p>Infine, da settembre 2024 sono iscritto alla laurea in linguistica e traduzione presso l'Università di Pisa.</p>
+
+          <!-- Contenuto principale -->
+          <div class="flex flex-col md:flex-row gap-6">
+            <!-- Colonna sinistra con immagine -->
+            <div class="md:w-1/3">
+              <img src="../assets/img/foto-laurea.jpg" 
+                   alt="Foto laurea triennale" 
+                   class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+            
+            <!-- Colonna destra con progress bars -->
+            <div class="md:w-2/3 space-y-6">
+              <!-- Progress Bar Inglese-->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-white">Inglese</span>
+                  <span class="text-gray-300">92%</span>
+                </div>
+                <div class="relative">
+                  <div class="absolute w-full bg-gray-500 rounded-full h-2.5"></div>
+                  <div class="relative bg-cyan-600 rounded-full h-2.5" style="width: 92%"></div>
+                </div>
+              </div>
+              <!-- Progress Bar Russo -->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-white">Russo</span>
+                  <span class="text-gray-300">87%</span>
+                </div>
+                <div class="relative">
+                  <div class="absolute w-full bg-gray-500 rounded-full h-2.5"></div>
+                  <div class="relative bg-cyan-600 rounded-full h-2.5" style="width: 87%"></div>
+                </div>
+              </div>
+
+              <!-- Progress Bar Spagnolo -->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-white">Spagnolo</span>
+                  <span class="text-gray-300">84%</span>
+                </div>
+                <div class="relative">
+                  <div class="absolute w-full bg-gray-500 rounded-full h-2.5"></div>
+                  <div class="relative bg-cyan-600 rounded-full h-2.5" style="width: 84%"></div>
+                </div>
+              </div>
+              <!-- Progress Bar Tedesco -->
+              <div>
+                <div class="flex justify-between mb-1">
+                  <span class="text-white">Tedesco</span>
+                  <span class="text-gray-300">65%</span>
+                </div>
+                <div class="relative">
+                  <div class="absolute w-full bg-gray-500 rounded-full h-2.5"></div>
+                  <div class="relative bg-cyan-600 rounded-full h-2.5" style="width: 65%"></div>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          <!-- Bottone -->
+          <button class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded transition-colors w-full">
+            Scopri di più
+          </button>
+        </div>
+
+        <!--Card 4: Soft Skills e esperienza aeroportuale -->
+        <div class="bg-gray-800 rounded-lg p-6 h-full flex flex-col space-y-8">
+          <!-- Sezione Titolo -->
+          <div class="mx-auto">
+            <h2 class="text-3xl font-bold text-cyan-300">Soft Skills</h2>
+          </div>
+          <div class="flex flex-col md:flex-row gap-6 flex-1">
+            <div class="md:w-1/3">
+              <img src="../assets/img/foto_aeroporto.jpeg" 
+                   alt="Foto esperienza aeroportuale" 
+                   class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <div class="md:w-2/3">
+              <div class="grid grid-cols-2 gap-6 text-white">
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-people-group text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Lavoro di squadra</span>
+                </div>
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-people-group text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Problem solving</span>
+                </div>
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-people-group text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Gestione del tempo</span>
+                </div>
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-hourglass-half text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Gestione dello stress</span>
+                </div>
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-globe text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Lavoro con clienti internazionali</span>
+                </div>
+                <div class="flex items-center gap-3 group">
+                  <i class="fa-solid fa-list-check text-2xl text-cyan-300 group-hover:text-white transition-colors"></i>
+                  <span class="group-hover:text-cyan-300 transition-colors">Multitasking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottone -->
+          <button class="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-2 rounded transition-colors w-full">
+            Scopri di più
+          </button>
         </div>
       </div>
-    </div>
-
+    </main>
+      
+            
+    
     <!-- FOOTER -->
     <footer class="bg-gray-800 text-white mt-20 border-t-2 border-cyan-300">
       <div class="container mx-auto px-4 py-8">

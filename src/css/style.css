@@ -1,3 +1,59 @@
+/* Assicurati che questo sia all'inizio del file style.css */
+:root {
+  /* Schema colori principale */
+  --bg-primary: #0F172A;      
+  --bg-secondary: #1E293B;    
+  --bg-tertiary: #334155;     
+  
+  /* Accenti */
+  --accent-primary: #22D3EE;  
+  --accent-secondary: #06B6D4; 
+  
+  /* Testo */
+  --text-primary: #F8FAFC;    
+  --text-secondary: #CBD5E1;  
+  --text-muted: #94A3B8;      
+}
+
+/* Aggiungi queste classi di utility se usi Tailwind */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+/* Variables */
+:root {
+  /* Schema colori principale */
+  --bg-primary: #0F172A;      /* Blu scuro più profondo per il background */
+  --bg-secondary: #1E293B;    /* Blu scuro più chiaro per navbar/footer */
+  --bg-tertiary: #334155;     /* Grigio blu per elementi interattivi */
+  
+  /* Accenti */
+  --accent-primary: #22D3EE;  /* Ciano più luminoso per elementi principali */
+  --accent-secondary: #06B6D4; /* Ciano più scuro per hover */
+  
+  /* Testo */
+  --text-primary: #F8FAFC;    /* Bianco leggermente smorzato */
+  --text-secondary: #CBD5E1;  /* Grigio chiaro */
+  --text-muted: #94A3B8;      /* Grigio più scuro per testo secondario */
+}
+
+/* Utility classes */
+.bg-custom-primary { background-color: var(--bg-primary); }
+.bg-custom-secondary { background-color: var(--bg-secondary); }
+.bg-custom-tertiary { background-color: var(--bg-tertiary); }
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1326,4 +1382,60 @@ video {
   .lg\:text-left {
     text-align: left;
   }
+}
+
+/* Aggiungi queste classi di utility se usi Tailwind */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+/* Aggiungi questo alla fine del file, dopo tutte le classi Tailwind */
+
+:root {
+  /* Schema colori principale */
+  --bg-primary: #0F172A;      
+  --bg-secondary: #1E293B;    
+  --bg-tertiary: #334155;     
+  
+  /* Accenti */
+  --accent-primary: #22D3EE;  
+  --accent-secondary: #06B6D4; 
+  
+  /* Testo */
+  --text-primary: #F8FAFC;    
+  --text-secondary: #CBD5E1;  
+  --text-muted: #94A3B8;      
+}
+
+/* Classi personalizzate con !important per superare Tailwind */
+.custom-text-primary {
+  color: var(--text-primary) !important;
+}
+
+.custom-text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.custom-text-accent {
+  color: var(--accent-primary) !important;
+}
+
+.custom-bg-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.custom-bg-secondary {
+  background-color: var(--bg-secondary) !important;
 } 
